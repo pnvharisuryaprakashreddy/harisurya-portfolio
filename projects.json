@@ -1,0 +1,43 @@
+[
+  {
+    "title": "Directus DevOps Deployment",
+    "period": "Jan – Feb 2026",
+    "role": "DevOps Engineer",
+    "tech": ["AWS", "EC2", "Docker Compose", "PostgreSQL", "GitLab CI", "GitHub Actions"],
+    "image": "images/exam-architecture-158x88.png",
+    "points": [
+      "Deployed Directus on AWS EC2 using Docker Compose with a PostgreSQL backend.",
+      "Automated CI/CD with GitLab CI and GitHub Actions for validation and health checks.",
+      "Configured EC2 security groups, environment variables, and persistent storage for 99% availability."
+    ],
+    "github": "https://github.com/pnvharisuryaprakashreddy/directus-devops-deployment"
+  },
+  {
+    "title": "Exam Interface Management System",
+    "period": "May – Jun 2025",
+    "role": "Cloud & Web Developer",
+    "tech": ["AWS", "EC2", "S3", "Lambda", "CloudFront", "Auto Scaling", "WAF"],
+    "image": "images/exam-architecture-158x88.png",
+    "points": [
+      "Built a responsive interface for students and instructors using HTML, CSS, and JavaScript.",
+      "Implemented AWS Auto Scaling and WAF to handle peak traffic with 99% availability.",
+      "Built a scalable platform with EC2, S3, RDS, Lambda, CloudFront, and CloudWatch monitoring.",
+      "Reduced manual evaluation effort by 60% with auto-grading workflows."
+    ],
+    "github": "https://github.com/pnvharisuryaprakashreddy/Exam-Interface-Management-System"
+  },
+  {
+    "title": "Secure File Management System",
+    "period": "Jul – Aug 2025",
+    "role": "Full Stack Developer",
+    "tech": ["Authentication", "RBAC", "Encryption", "Audit Logs", "JavaScript"],
+    "image": "images/secure-file-architecture-158x88.png",
+    "points": [
+      "Designed MFA login with role-based access control for secure operations.",
+      "Implemented encrypted file handling and activity logging for traceability.",
+      "Delivered a responsive UI with HTML, CSS, and JavaScript.",
+      "Improved user experience efficiency by 40% through streamlined interaction design."
+    ],
+    "github": "https://github.com/pnvharisuryaprakashreddy/secure-file-management-system"
+  }
+]

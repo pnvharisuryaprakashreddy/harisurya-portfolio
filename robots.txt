@@ -1,0 +1,6 @@
+# Robots.txt for P N V Hari Surya Prakash Reddy Portfolio
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://pnvharisuryaprakashreddy.github.io/sitemap.xml

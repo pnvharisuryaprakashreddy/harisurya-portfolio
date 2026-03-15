@@ -1,0 +1,181 @@
+/* ===== ANIMATIONS ===== */
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes loader-fadeout {
+    to {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+@keyframes loaderExit {
+    0% { opacity: 1; filter: blur(0); transform: scale(1); }
+    100% { opacity: 0; filter: blur(6px); transform: scale(0.98); visibility: hidden; }
+}
+
+
+@keyframes logoPop {
+    0% { transform: scale(0.7); opacity: 0; }
+    60% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes logoReveal {
+    0% { opacity: 0; filter: blur(10px) drop-shadow(0 0 10px var(--glow)); }
+    100% { opacity: 1; filter: blur(0) drop-shadow(0 0 28px var(--glow)); }
+}
+
+@keyframes logoFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+@keyframes logoPulse {
+    0%, 100% { filter: drop-shadow(0 0 18px var(--glow)); }
+    50% { filter: drop-shadow(0 0 34px var(--glow)); }
+}
+
+@keyframes loaderFadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes nameReveal {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glassPulse {
+    0%, 100% { box-shadow: 0 20px 60px rgba(0,0,0,0.45), 0 0 22px var(--glow); }
+    50% { box-shadow: 0 24px 70px rgba(0,0,0,0.55), 0 0 34px var(--glow); }
+}
+
+@keyframes barShimmer {
+    0% { transform: translateX(-120%); opacity: 0.4; }
+    50% { opacity: 0.9; }
+    100% { transform: translateX(120%); opacity: 0.4; }
+}
+
+@keyframes loaderContentIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes loaderLine {
+    0%, 100% { transform: scaleX(0.6); opacity: 0.6; }
+    50% { transform: scaleX(1); opacity: 1; }
+}
+
+@keyframes loaderParticles {
+    0% { transform: translateY(0); opacity: 0.6; }
+    50% { transform: translateY(-6px); opacity: 1; }
+    100% { transform: translateY(0); opacity: 0.6; }
+}
+
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px var(--glow); }
+    50% { box-shadow: 0 0 40px rgba(255, 153, 0, 0.75); }
+}
+
+@keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+@keyframes float-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes morphing {
+    0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+    50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+    75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+}
+
+@keyframes float-card {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes float-blob {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(50px, 30px) scale(1.1); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes float-shape {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-100px) rotate(180deg);
+        opacity: 0.6;
+    }
+}
+
+@keyframes pulse-radial {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+@keyframes icon-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+/* Reveal Animation */
+.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Section reveal override (applied via JS) */
+section.section-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+section.section-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

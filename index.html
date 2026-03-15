@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="P N V Hari Surya Prakash Reddy - Computer Science student focused on cloud, DevOps, and secure systems. View my projects, skills, and experience.">
+    <meta name="keywords" content="Hari Surya Prakash Reddy, Cloud, DevOps, AWS, Java, Docker, Portfolio">
+    <meta name="author" content="P N V Hari Surya Prakash Reddy">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1d4ed8">
+    
+    <!-- Preconnect to external resources for faster loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="apple-touch-icon" href="assets/icons/favicon.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Hari Portfolio">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pnvharisuryaprakashreddy.github.io/">
+    <meta property="og:title" content="P N V Hari Surya Prakash Reddy | Cloud & DevOps">
+    <meta property="og:description" content="Portfolio of P N V Hari Surya Prakash Reddy - Cloud, DevOps, and secure systems projects.">
+    <meta property="og:image" content="assets/images/profile.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pnvharisuryaprakashreddy.github.io/">
+    <meta property="twitter:title" content="P N V Hari Surya Prakash Reddy | Cloud & DevOps">
+    <meta property="twitter:description" content="Portfolio of P N V Hari Surya Prakash Reddy - Cloud, DevOps, and secure systems.">
+    <meta property="twitter:image" content="assets/images/profile.png">
+
+    <title>P N V Hari Surya Prakash Reddy | Cloud & DevOps</title>
+    
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "P N V Hari Surya Prakash Reddy",
+        "url": "https://pnvharisuryaprakashreddy.github.io/",
+        "image": "assets/images/profile.png",
+        "jobTitle": ["Cloud Engineer", "DevOps Engineer"],
+        "description": "Computer Science Student with expertise in cloud-native systems and DevOps",
+        "email": "hspr2227@gmail.com",
+        "telephone": "+919133662227",
+        "sameAs": [
+            "https://www.linkedin.com/in/harisuryareddy/",
+            "https://github.com/pnvharisuryaprakashreddy"
+        ],
+        "knowsAbout": ["Java", "AWS", "Docker", "Cloud Architecture", "CI/CD", "GitLab", "Linux"],
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Lovely Professional University"
+        }
+    }
+    </script>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Vercel Web Analytics -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#home" class="skip-nav">Skip to main content</a>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-glass">
+                <img class="loader-logo" src="assets/icons/favicon.png" alt="HR logo">
+                <div class="loader-percent" id="loaderPercent">1%</div>
+                <div class="loader-portfolio">PORTFOLIO</div>
+                <div class="loader-name" id="loaderName">P N V Hari Surya Prakash Reddy</div>
+                <div class="loader-role">Cloud &amp; DevOps Engineer</div>
+                <div class="loader-progress">
+                    <div class="loader-bar">
+                        <span class="loader-bar-fill" id="loaderBar"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to Top" aria-label="Scroll back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Copy Toast Notification -->
+    <div class="copy-toast" id="copyToast">
+        <i class="fas fa-check-circle"></i>
+        <span>Email copied to clipboard!</span>
+    </div>
+
+    <!-- CV Download Button -->
+    <a href="assets/documents/Harisurya_CV.pdf" download="Harisurya_CV.pdf" class="cv-download-btn" onclick="downloadCV(event)">
+        <i class="fas fa-download"></i>
+        <span>Download CV</span>
+    </a>
+
+    <!-- Light Mode Animated Background -->
+    <div class="light-bg-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;"></div>
+
+    <!-- Floating Geometric Shapes -->
+    <div class="floating-shapes">
+        <div class="shape circle"></div>
+        <div class="shape"></div>
+        <div class="shape circle"></div>
+        <div class="shape triangle"></div>
+        <div class="shape circle"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+    <nav>
+        <a href="#home" class="nav-brand">HR</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#skills" class="nav-link" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#experience" class="nav-link" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" class="nav-link" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#achievements" class="nav-link" onclick="toggleMenu()">Achievements</a></li>
+            <li><a href="#education" class="nav-link" onclick="toggleMenu()">Education</a></li>
+            <li><a href="#contact" class="nav-link" onclick="toggleMenu()">Contact</a></li>
+            <li>
+                <div class="theme-toggle" onclick="toggleTheme()">
+                    <div class="theme-toggle-ball"></div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <a href="https://www.linkedin.com/in/harisuryareddy/" target="_blank" rel="noopener noreferrer" class="badge" style="cursor: pointer; text-decoration: none;">🚀 Available for Opportunities</a>
+                <h1 class="glitch" data-text="P N V Hari Surya Prakash Reddy">P N V Hari Surya Prakash Reddy</h1>
+                <div class="typing-text">
+                    <span id="typedText"></span>
+                    <span class="cursor-blink"></span>
+                </div>
+                <p class="bio"><span class="greeting-text" id="greeting">Hello!</span> I'm a Computer Science student focused on building secure, scalable cloud-native systems. I work with Java, AWS, Docker, CI/CD pipelines, and GitLab to deliver reliable infrastructure and applications.</p>
+                
+                <div class="collaboration-badge">
+                    🚀 Open to Collaborate on Cloud & DevOps Projects
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary"><span>View My Work</span></a>
+                    <a href="#contact" class="btn btn-secondary"><span>Get In Touch</span></a>
+                </div>
+
+                <div class="social-links">
+                    <a href="mailto:hspr2227@gmail.com" class="social-link" aria-label="Email me"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/harisuryareddy/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="https://github.com/pnvharisuryaprakashreddy" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="tel:+919133662227" class="social-link" aria-label="Call me"><i class="fas fa-phone-alt" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <img loading="lazy" src="assets/images/profile.png" alt="P N V Hari Surya Prakash Reddy" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="reveal">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3><span class="skill-icon"><i class="fas fa-code"></i></span> Languages</h3>
+                <div class="skill-items">
+                    <span class="skill-item" data-level="Advanced">Java</span>
+                    <span class="skill-item" data-level="Intermediate">C</span>
+                    <span class="skill-item" data-level="Intermediate">C++</span>
+                    <span class="skill-item" data-level="Intermediate">Python</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3><span class="skill-icon"><i class="fas fa-layer-group"></i></span> Web Technologies</h3>
+                <div class="skill-items">
+                    <span class="skill-item" data-level="Advanced">HTML</span>
+                    <span class="skill-item" data-level="Advanced">CSS</span>
+                    <span class="skill-item" data-level="Intermediate">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3><span class="skill-icon"><i class="fas fa-cloud"></i></span> Cloud & DevOps</h3>
+                <div class="skill-items">
+                    <span class="skill-item" data-level="Advanced">AWS</span>
+                    <span class="skill-item" data-level="Advanced">EC2</span>
+                    <span class="skill-item" data-level="Advanced">S3</span>
+                    <span class="skill-item" data-level="Intermediate">RDS</span>
+                    <span class="skill-item" data-level="Intermediate">IAM</span>
+                    <span class="skill-item" data-level="Intermediate">VPC</span>
+                    <span class="skill-item" data-level="Intermediate">Lambda</span>
+                    <span class="skill-item" data-level="Intermediate">CloudWatch</span>
+                    <span class="skill-item" data-level="Intermediate">Docker</span>
+                    <span class="skill-item" data-level="Intermediate">GitLab</span>
+                    <span class="skill-item" data-level="Intermediate">CI/CD</span>
+                    <span class="skill-item" data-level="Intermediate">Linux</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3><span class="skill-icon"><i class="fas fa-tools"></i></span> Tools & Platforms</h3>
+                <div class="skill-items">
+                    <span class="skill-item" data-level="Intermediate">AWS Sandbox</span>
+                    <span class="skill-item" data-level="Intermediate">Rocky Linux</span>
+                    <span class="skill-item" data-level="Intermediate">Cursor AI</span>
+                    <span class="skill-item" data-level="Advanced">Git</span>
+                    <span class="skill-item" data-level="Advanced">GitHub</span>
+                    <span class="skill-item" data-level="Advanced">VS Code</span>
+                    <span class="skill-item" data-level="Intermediate">MySQL</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3><span class="skill-icon"><i class="fas fa-users"></i></span> Soft Skills</h3>
+                <div class="skill-items">
+                    <span class="skill-item" data-level="Advanced">Leadership</span>
+                    <span class="skill-item" data-level="Advanced">Problem-Solving</span>
+                    <span class="skill-item" data-level="Advanced">Team Player</span>
+                    <span class="skill-item" data-level="Advanced">Time Management</span>
+                    <span class="skill-item" data-level="Advanced">Adaptability</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3><span class="skill-icon"><i class="fas fa-brain"></i></span> Core Competencies</h3>
+                <div class="skill-items">
+                    <span class="skill-item" data-level="Advanced">DSA</span>
+                    <span class="skill-item" data-level="Intermediate">Cloud Architecture</span>
+                    <span class="skill-item" data-level="Intermediate">Security</span>
+                    <span class="skill-item" data-level="Intermediate">Observability</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="reveal">
+        <h2 class="section-title">Experience & Training</h2>
+        <div class="experience-container">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Board Infinity - Mastering Data Structures and Algorithms</h3>
+                        <p class="experience-platform">Jun 2025 - Aug 2025</p>
+                    </div>
+                </div>
+                <div class="experience-stats">
+                    <div class="stat-item">
+                        <div class="stat-number counter" data-target="150">0</div>
+                        <div class="stat-label">Problems Solved</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number counter" data-target="6">0</div>
+                        <div class="stat-label">Core Topics</div>
+                    </div>
+                </div>
+                <p style="color: var(--text-secondary); line-height: 1.8;">
+                    Completed structured training focused on arrays, linked lists, stacks, queues, trees, graphs,
+                    dynamic programming, and optimization techniques in Java. Practiced coding challenges and
+                    algorithmic problem solving.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card gradient-border glow-spread hover-lift stagger-item">
+                <div class="project-thumbnail">
+                    <img loading="lazy" src="assets/images/directus.png" alt="Directus DevOps Deployment" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <i class="fas fa-server project-icon" style="display: none;"></i>
+                </div>
+                <div class="project-body">
+                    <h3>Directus DevOps Deployment</h3>
+                    <p>Deployed a containerized Directus CMS on AWS EC2 using Docker Compose with PostgreSQL. Automated CI/CD with GitLab CI and GitHub Actions for validation and health checks.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">GitLab CI</span>
+                        <span class="tech-tag">GitHub Actions</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/pnvharisuryaprakashreddy/directus-devops-deployment" target="_blank" rel="noopener noreferrer" class="project-link">View Code →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card gradient-border glow-spread hover-lift stagger-item">
+                <div class="project-thumbnail">
+                    <img loading="lazy" src="assets/images/exam-interface.png" alt="Exam Interface Management System" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <i class="fas fa-clipboard-check project-icon" style="display: none;"></i>
+                </div>
+                <div class="project-body">
+                    <h3>Exam Interface Management System</h3>
+                    <p>Built a responsive exam platform on AWS with Auto Scaling, WAF, CloudFront, and CloudWatch monitoring. Reduced manual evaluation effort by 60% with auto-grading workflows.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">EC2</span>
+                        <span class="tech-tag">S3</span>
+                        <span class="tech-tag">Lambda</span>
+                        <span class="tech-tag">WAF</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/pnvharisuryaprakashreddy/Exam-Interface-Management-System" target="_blank" rel="noopener noreferrer" class="project-link">View Code →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card gradient-border glow-spread hover-lift stagger-item">
+                <div class="project-thumbnail">
+                    <img loading="lazy" src="assets/images/secure-file.png" alt="Secure File Management System" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <i class="fas fa-shield-alt project-icon" style="display: none;"></i>
+                </div>
+                <div class="project-body">
+                    <h3>Secure File Management System</h3>
+                    <p>Designed MFA login with RBAC, encrypted file handling, and activity logging. Delivered a responsive UI and improved user experience efficiency by 40%.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">RBAC</span>
+                        <span class="tech-tag">MFA</span>
+                        <span class="tech-tag">Encryption</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/pnvharisuryaprakashreddy/secure-file-management-system" target="_blank" rel="noopener noreferrer" class="project-link">View Code →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="reveal">
+        <h2 class="section-title">Achievements</h2>
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <div class="achievement-badge">🏆 Hackathon</div>
+                <h3 class="achievement-title">Adobe India Hackathon</h3>
+                <p class="achievement-description">
+                    Qualified and participated in Round 1 (Online MCQ + Coding), demonstrating analytical and coding skills.
+                </p>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-badge">🏅 Challenge</div>
+                <h3 class="achievement-title">TVS Credit EPIC 7.0</h3>
+                <p class="achievement-description">
+                    Participated in the IT challenge showcasing problem-solving and technical understanding.
+                </p>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-badge">🌟 DSA</div>
+                <h3 class="achievement-title">LeetCode</h3>
+                <p class="achievement-description">
+                    Solved 150+ data structures and algorithms problems.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="reveal">
+        <h2 class="section-title">Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <h4>AWS Academy Graduate – Cloud Architecting</h4>
+                <p>Amazon • Jan 2026</p>
+            </div>
+            <div class="cert-card">
+                <h4>Oracle Cloud Infrastructure – AI Foundations Associate</h4>
+                <p>Oracle • Jul 2025</p>
+            </div>
+            <div class="cert-card">
+                <h4>Cloud Solutions Architecture – Job Simulation</h4>
+                <p>Amazon • Jul 2025</p>
+            </div>
+            <div class="cert-card">
+                <h4>AWS Academy Graduate – Cloud Foundations</h4>
+                <p>Amazon • Apr 2025</p>
+            </div>
+            <div class="cert-card">
+                <h4>Computer Networking</h4>
+                <p>Google – Coursera • Sep 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="reveal">
+        <h2 class="section-title">Education</h2>
+        <div class="education-container">
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>B.Tech in Computer Science and Engineering</h3>
+                    <p class="institution">Lovely Professional University</p>
+                    <p class="date">Aug 2023 – Jul 2027 | Punjab, India</p>
+                    <span class="grade">CGPA: 7.13</span>
+                </div>
+                <div class="education-dot"></div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Intermediate</h3>
+                    <p class="institution">Resonance Junior College</p>
+                    <p class="date">Apr 2021 – Mar 2023 | Telangana, India</p>
+                    <span class="grade">75.9%</span>
+                </div>
+                <div class="education-dot"></div>
+            </div>
+            
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>Matriculation</h3>
+                    <p class="institution">Ridge School</p>
+                    <p class="date">Jun 2020 – Mar 2021 | Andhra Pradesh, India</p>
+                    <span class="grade">74%</span>
+                </div>
+                <div class="education-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-header reveal">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">Have a project in mind? Let's build something amazing together!</p>
+        </div>
+        <div class="contact-container reveal">
+            <!-- Left Side: Contact Info -->
+            <div class="contact-info">
+                <h3 class="info-title">Let's Connect</h3>
+                <p class="info-desc">
+                    I'm constantly looking for new opportunities and challenges. 
+                    Whether you have a question or just want to say hi, feel free to drop a message!
+                </p>
+                <div class="contact-details">
+                    <div class="detail-item copy-email" onclick="copyEmail()" title="Click to copy email">
+                        <i class="fas fa-envelope"></i>
+                        <span>hspr2227@gmail.com</span>
+                        <i class="fas fa-copy copy-icon"></i>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 91336 62227</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>India</span>
+                    </div>
+                </div>
+                <!-- Clickable Social Icons -->
+                <div class="social-connect">
+                    <a href="https://www.linkedin.com/in/harisuryareddy/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/pnvharisuryaprakashreddy" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub" aria-label="GitHub Profile">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:hspr2227@gmail.com" class="social-btn" title="Email" aria-label="Email me">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side: Form -->
+            <div class="contact-form-wrapper">
+                <h3 class="info-title">Get In Touch</h3>
+                <form id="contactForm" action="https://formspree.io/f/mbdzoajr" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    <div id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-left">
+                    <h3>Let's Build Something<br>Amazing Together</h3>
+                    <p class="footer-tagline">Available for freelance projects, collaborations, and full-time opportunities. Let's turn ideas into reality.</p>
+                    <div class="footer-social">
+                        <a href="mailto:hspr2227@gmail.com" class="footer-social-link" title="Email" aria-label="Email me">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/harisuryareddy/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="LinkedIn" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/pnvharisuryaprakashreddy" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="GitHub" aria-label="GitHub Profile">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="tel:+919133662227" class="footer-social-link" title="Phone" aria-label="Call me">
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-nav-title">Quick Links</div>
+                    <div class="footer-links">
+                        <a href="#home"><i class="fas fa-chevron-right"></i> Home</a>
+                        <a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a>
+                        <a href="#experience"><i class="fas fa-chevron-right"></i> Experience</a>
+                        <a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a>
+                        <a href="#achievements"><i class="fas fa-chevron-right"></i> Achievements</a>
+                        <a href="#education"><i class="fas fa-chevron-right"></i> Education</a>
+                    </div>
+                    <a href="#contact" class="footer-cta">
+                        <i class="fas fa-paper-plane"></i> Start a Conversation
+                    </a>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="currentYear"></span> P N V Hari Surya Prakash Reddy. Crafted with <i class="fas fa-heart"></i> and code.</p>
+                <p class="footer-credit">Designed & Built by <a href="#home">P N V Hari Surya Prakash Reddy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- JS Modules -->
+    <script src="js/modules/theme.js"></script>
+    <script src="js/modules/cursor.js"></script>
+    <script src="js/modules/particles-config.js"></script>
+    <script src="js/modules/typing.js"></script>
+    <script src="js/modules/navigation.js"></script>
+    <script src="js/modules/scroll.js"></script>
+    <script src="js/modules/animations.js"></script>
+    <script src="js/modules/form.js"></script>
+    <script src="js/modules/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
