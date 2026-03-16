@@ -115,30 +115,75 @@ nav .nav-link.active::after {
 
 /* Theme Toggle */
 .theme-toggle {
-    width: 55px;
-    height: 28px;
-    background: var(--bg-tertiary);
-    border-radius: 20px;
-    cursor: pointer;
+    width: 68px;
+    height: 32px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: linear-gradient(135deg, rgba(18, 32, 51, 0.95), rgba(24, 44, 70, 0.95));
     position: relative;
-    transition: all 0.3s ease;
-    border: 2px solid var(--accent-primary);
+    cursor: pointer;
+    padding: 0;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    overflow: hidden;
 }
 
-.theme-toggle-ball {
+.theme-toggle::before {
+    content: "";
     position: absolute;
-    width: 20px;
-    height: 20px;
-    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-    border-radius: 50%;
-    top: 2px;
+    top: 3px;
     left: 3px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 2px 10px var(--glow);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #ffffff, #d9d9d9);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35), 0 0 16px rgba(255, 255, 255, 0.4);
+    transition: transform 0.35s ease;
+    z-index: 2;
 }
 
-.light-mode .theme-toggle-ball {
-    transform: translateX(25px);
+.theme-toggle .toggle-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    opacity: 0.85;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1;
+}
+
+.theme-toggle .toggle-icon.sun {
+    right: 8px;
+}
+
+.theme-toggle .toggle-icon.moon {
+    left: 8px;
+}
+
+.light-mode .theme-toggle {
+    background: linear-gradient(135deg, rgba(255, 189, 101, 0.95), rgba(255, 142, 92, 0.95));
+    border-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 12px 26px rgba(255, 153, 0, 0.25), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.light-mode .theme-toggle::before {
+    transform: translateX(30px);
+    background: radial-gradient(circle at 30% 30%, #ffe9a6, #ffcc66);
+    box-shadow: 0 8px 18px rgba(255, 153, 0, 0.35), 0 0 16px rgba(255, 153, 0, 0.45);
+}
+
+.light-mode .theme-toggle .toggle-icon.sun {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.light-mode .theme-toggle .toggle-icon.moon {
+    opacity: 0.35;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
 }
 
 /* Hamburger Menu */

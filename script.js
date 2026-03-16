@@ -6,7 +6,7 @@ const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)
 function setTheme(isDark) {
   body.classList.toggle("dark", isDark);
   if (btn) {
-    btn.textContent = isDark ? "☀️" : "🌙";
+    btn.setAttribute("aria-label", isDark ? "Switch to day mode" : "Switch to night mode");
   }
   localStorage.setItem("theme", isDark ? "dark" : "light");
 }
