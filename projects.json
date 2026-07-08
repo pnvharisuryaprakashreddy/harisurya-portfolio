@@ -14,7 +14,7 @@
   },
   {
     "title": "Exam Interface Management System",
-    "period": "May – Jun 2025",
+    "period": "Jul – Aug 2025",
     "role": "Cloud & Web Developer",
     "tech": ["AWS", "EC2", "S3", "Lambda", "CloudFront", "Auto Scaling", "WAF"],
     "image": "images/exam-architecture-158x88.png",
@@ -28,7 +28,7 @@
   },
   {
     "title": "Secure File Management System",
-    "period": "Jul – Aug 2025",
+    "period": "May – Jun 2025",
     "role": "Full Stack Developer",
     "tech": ["Authentication", "RBAC", "Encryption", "Audit Logs", "JavaScript"],
     "image": "images/secure-file-architecture-158x88.png",
